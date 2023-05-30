@@ -1,15 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import ReactDOM from 'react-dom';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 import {ChakraProvider} from "@chakra-ui/react";
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
+ReactDOM.render(
   <ChakraProvider>
       <App />
-  </ChakraProvider>
+  </ChakraProvider>,
+  document.getElementById('root')
 );

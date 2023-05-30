@@ -1,13 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import {Box, Button, ChakraProvider, Flex, Heading, Image, Text} from "@chakra-ui/react";
+import {Box, Button, ChakraProvider, Flex, Heading, Image, Switch, Text} from "@chakra-ui/react";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
-function App() {git remote add origin https://github.com/ryankuah/website.git
+import {HomePage, AboutPage, ProjectPage} from "./pages"
+import Theme from "./Theme";
+
+function App() {
   return (
-    <Text>
-      Hello World
-    </Text>
+    <ChakraProvider theme={Theme}>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage/>}/>
+          <Route path="/about" element={<AboutPage/>}/>
+          <Route path="/projects" element={<ProjectPage/>}/>
+        </Routes>
+      </Router>
+    </ChakraProvider>
   );
 }
 
