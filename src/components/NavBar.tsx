@@ -1,6 +1,7 @@
-import {Box, Link, Image, Stack, Button, Fade} from "@chakra-ui/react";
+import {Link, Image, Stack, Fade} from "@chakra-ui/react";
 import {useNavigate} from "react-router-dom";
 import { useState } from "react";
+import { Options } from "./Options";
 
 
 export const NavBar = () => {
@@ -22,7 +23,8 @@ export const NavBar = () => {
                     <Stack>
                         <Link href="/about" pt={"2%"} fontSize={"2xl"} fontFamily={"Serif"}>About</Link>
                         <Link href="/projects" pt={"2%"} fontSize={"2xl"} fontFamily={"Serif"}>Projects</Link>
-                        <Link href="/about" pt={"2%"} fontSize={"2xl"} fontFamily={"Serif"}>Something Else</Link>
+                        <Link href="/somethingelse" pt={"2%"} fontSize={"2xl"} fontFamily={"Serif"}>Something Else</Link>
+                        <Options/>
                     </Stack>
                     ) : null}
                 </Fade>

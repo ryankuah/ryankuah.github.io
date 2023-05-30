@@ -1,6 +1,5 @@
 import { NavBar } from "../components";
-import { Stack, Container } from "@chakra-ui/layout";
-
+import { Container } from "@chakra-ui/layout";
 
 export const HomePage = () => {
     return (
