@@ -1,4 +1,4 @@
-import {IconButton, Button, Icon, Box} from "@chakra-ui/react";
+import {IconButton, Icon, HStack, Spacer} from "@chakra-ui/react";
 import {useColorMode} from "@chakra-ui/color-mode";
 import {BsSun,BsMoon} from "react-icons/bs";
 
@@ -6,13 +6,16 @@ export const Options = () => {
     const {colorMode, toggleColorMode} = useColorMode();
 
     return(
-        <Box>
+        <HStack>
+            <Spacer/>
             <IconButton 
             aria-label="Toggle Theme" 
             icon={<Icon as={colorMode === 'light' ? BsMoon : BsSun} />} 
             onClick={toggleColorMode}
             variant="transparent"
+            size={"lg"}
+            paddingRight={"5%"}
             />
-        </Box>
+        </HStack>
     )
 }

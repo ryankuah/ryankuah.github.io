@@ -1,7 +1,7 @@
 import {Link, Image, Stack, Fade} from "@chakra-ui/react";
 import {useNavigate} from "react-router-dom";
 import { useState } from "react";
-import { Options } from "./Options";
+import logo from "../assets/logo.jpg";
 
 
 export const NavBar = () => {
@@ -14,9 +14,9 @@ export const NavBar = () => {
                 onClick={() => navigate("/")}
                 onMouseOver= {() => setIsOpen(true)}
                 _hover={{cursor: "pointer"}}
-                src="https://w7.pngwing.com/pngs/361/627/png-transparent-leaf-logo-green-leaves-green-and-teal-leaf-logo-text-maple-leaf-grass.png" 
-                boxSize="4em" 
-                borderRadius="full"                     
+                src={logo}
+                color={"black"}
+                boxSize="4em"                      
                 />
                 <Fade in={isOpen}>
                     {isOpen ? (
@@ -24,7 +24,6 @@ export const NavBar = () => {
                         <Link href="/about" pt={"2%"} fontSize={"2xl"} fontFamily={"Serif"}>About</Link>
                         <Link href="/projects" pt={"2%"} fontSize={"2xl"} fontFamily={"Serif"}>Projects</Link>
                         <Link href="/somethingelse" pt={"2%"} fontSize={"2xl"} fontFamily={"Serif"}>Something Else</Link>
-                        <Options/>
                     </Stack>
                     ) : null}
                 </Fade>
