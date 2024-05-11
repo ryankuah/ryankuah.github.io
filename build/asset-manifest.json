@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/ryankuah.github.io/static/js/main.b38cebe5.js",
+    "main.js": "/ryankuah.github.io/static/js/main.4a14194d.js",
     "static/media/logo.jpg": "/ryankuah.github.io/static/media/logo.514c792d4754b63e9ca9.jpg",
     "index.html": "/ryankuah.github.io/index.html",
-    "main.b38cebe5.js.map": "/ryankuah.github.io/static/js/main.b38cebe5.js.map"
+    "main.4a14194d.js.map": "/ryankuah.github.io/static/js/main.4a14194d.js.map"
   },
   "entrypoints": [
-    "static/js/main.b38cebe5.js"
+    "static/js/main.4a14194d.js"
   ]
 }
