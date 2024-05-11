@@ -2,7 +2,7 @@
   "homepage": "https://ryankuah.github.io/ryankuah.github.io/",
   "name": "website",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.6.1",
     "@emotion/react": "^11.11.0",
