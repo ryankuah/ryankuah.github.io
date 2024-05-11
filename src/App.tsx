@@ -7,16 +7,14 @@ import Theme from "./Theme";
 
 function App() {
   return (
-    <ChakraProvider theme={Theme}>
-      <BrowserRouter basename={"/"}>
-        <Routes>
-          <Route path="/" element={<HomePage/>}/>
-          <Route path="/about" element={<AboutPage/>}/>
-          <Route path="/projects" element={<ProjectPage/>}/>
-          <Route path="/somethingelse" element={<SomethingElse/>}/>
-        </Routes>
-      </BrowserRouter>
-    </ChakraProvider>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/about" element={<AboutPage/>}/>
+        <Route path="/projects" element={<ProjectPage/>}/>
+        <Route path="/somethingelse" element={<SomethingElse/>}/>
+      </Routes>
+    </HashRouter>
   );
 }
 
