@@ -21,9 +21,9 @@ export const NavBar = () => {
                 <Collapse in={isOpen}>
                     {isOpen ? (
                     <Stack>
-                        <Link href="/about" pt={"2%"} fontSize={"2xl"} fontFamily={"Serif"}>About</Link>
-                        <Link href="/projects" pt={"2%"} fontSize={"2xl"} fontFamily={"Serif"}>Projects</Link>
-                        <Link href="/somethingelse" pt={"2%"} fontSize={"2xl"} fontFamily={"Serif"}>Something Else</Link>
+                        <Link href="/#/about" pt={"2%"} fontSize={"2xl"} fontFamily={"Serif"}>About</Link>
+                        <Link href="/#/projects" pt={"2%"} fontSize={"2xl"} fontFamily={"Serif"}>Projects</Link>
+                        <Link href="/#/somethingelse" pt={"2%"} fontSize={"2xl"} fontFamily={"Serif"}>Something Else</Link>
                     </Stack>
                     ) : null}
                 </Collapse>
