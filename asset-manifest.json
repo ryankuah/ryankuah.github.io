@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/ryankuah.com/static/js/main.654acbf5.js",
+    "main.js": "/ryankuah.com/static/js/main.3236e744.js",
     "static/media/logo.jpg": "/ryankuah.com/static/media/logo.514c792d4754b63e9ca9.jpg",
     "index.html": "/ryankuah.com/index.html",
-    "main.654acbf5.js.map": "/ryankuah.com/static/js/main.654acbf5.js.map"
+    "main.3236e744.js.map": "/ryankuah.com/static/js/main.3236e744.js.map"
   },
   "entrypoints": [
-    "static/js/main.654acbf5.js"
+    "static/js/main.3236e744.js"
   ]
 }
