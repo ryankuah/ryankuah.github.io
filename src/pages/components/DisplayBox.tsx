@@ -15,7 +15,8 @@ import {
 export const DisplayBox = ({type}: {type: string}) => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     return (
-        <div>
+        <>  
+            
             <Button onClick={onOpen}>Open Modal</Button>
             <Modal isOpen={isOpen} onClose={onClose}>
             <ModalOverlay />
@@ -36,6 +37,6 @@ export const DisplayBox = ({type}: {type: string}) => {
             </ModalFooter>
             </ModalContent>
             </Modal>
-        </div>
+        </>
     );
 }
